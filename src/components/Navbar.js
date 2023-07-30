@@ -22,7 +22,7 @@ export default function Navbar() {
                 >
                   <FaSquareFull className="icon2" />
                   <FaSquareFull className="icon1" />
-                  <span className="brandName">portfolio</span>
+                  <span className="brandName">portfolo</span>
                 </NavLink>
                 <button
                   className="navbar-toggler border-0 d-flex justify-content-center align-content-center p-0"
