@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800&family=Ysabeau+SC:wght@300;400;500&display=swap");
+:root {
+  --primary-clr: #4070f4;
+  --bg-clr: #181818;
+  --white-clr: #fff;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  background-color: rgb(224, 252, 255);
+  background: radial-gradient(#444df72d 2px, rgba(224, 252, 255, 0.432) 2px);
+  background-size: 40px 40px;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+nav {
+  font-family: "Ysabeau SC", sans-serif;
+}
+.icon1 {
+  color: var(--primary-clr);
+  rotate: 15deg;
+  transform: translateX(-5px);
+}
+.icon2 {
+  color: #dde6ed;
+}
+.brandName {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-weight: 600 !important;
+}
+
+.burger {
+  color: var(--primary-clr) !important;
+  font-size: 26px;
+  transform: scaleX(1.3) !important;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+#home {
+  min-height: 85.5vh;
+}
+#home,
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.greet {
+  font-weight: 800;
+  font-size: 5rem;
+}
+.header {
+  font-weight: 900;
+  color: var(--primary-clr);
+  font-size: 5rem;
+}
+.role {
+  display: inline-block;
+  border-radius: 10px;
+  background: #f4b183;
+  font-weight: bold;
+}
+
+.about {
+  background-color: var(--bg-clr);
+  border-radius: 10px;
+}
+
+.imgUser {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.imgUser img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.nav-link.active {
+  color: var(--primary-clr) !important;
+  font-weight: 900;
+}
+
+#skills {
+  background-color: var(--white-clr) !important;
+}
+.skillHeader,
+.ProjectHeader {
+  color: var(--primary-clr) !important;
+}
+.skilCard,
+.pj {
+  height: 260px;
+  border-radius: 10px;
+}
+
+#html {
+  background: linear-gradient(
+    180deg,
+    rgba(172, 194, 232, 0.5) 0%,
+    rgba(95, 122, 168, 0.03) 100%
+  );
+}
+#js {
+  background: linear-gradient(
+    180deg,
+    rgba(248, 255, 195, 1) 0%,
+    rgba(95, 122, 168, 0.03) 100%
+  );
+}
+#bt {
+  background: linear-gradient(
+    180deg,
+    rgba(188, 150, 255, 1) 0%,
+    rgba(95, 122, 168, 0.02) 100%
+  );
+}
+#react {
+  background: linear-gradient(
+    180deg,
+    rgb(177, 214, 236) 0%,
+    rgba(95, 122, 168, 0.1) 100%
+  );
+}
+
+.ctaBtn {
+  max-width: 150px !important;
+  width: 100% !important;
+  height: 50px;
+  border-radius: 8px;
+  background: var(--bg-clr);
+}
+.bTn {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pjtBtn {
+  padding: 1.5rem 0;
+  font-weight: 800;
+  background-color: #748cab;
+  transition: background-color 0.5s ease;
+}
+.pjtBtn:hover {
+  background-color: var(--bg-clr);
+}
+.pj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222831;
+}
+
+#contact input,
+#contact textarea {
+  background: #627597;
+  outline: none;
+  border: none;
+  padding: 15px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  box-shadow: none !important;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+#contact textarea::-webkit-scrollbar {
+  display: none;
+}
+
+#contact textarea {
+  resize: none;
+}
+#footer {
+  margin-top: auto;
+}
+
+.sBtn {
+  background: #627597;
+  outline: none;
+  border: none;
+  padding: 10px 35px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 991px) {
+  .greet,
+  .header {
+    font-size: 4rem;
+  }
+  .role {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .greet,
+  .header {
+    font-size: 3.2rem;
+  }
+  .role {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .greet,
+  .header {
+    font-size: 2.3rem;
+  }
+  .role {
+    font-size: 0.8rem;
+  }
+  .sBtn {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .greet,
+  .header {
+    font-size: 2rem;
+  }
+  .role {
+    font-size: 0.7rem;
+  }
+  #footer h6 {
+    font-size: 13px;
+  }
+}
+@media (min-width: 300px) and (max-width: 410px) {
+  #contact h1 {
+    font-size: 2.7rem !important;
+  }
+}
